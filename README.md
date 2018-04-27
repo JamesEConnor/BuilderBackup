@@ -1,5 +1,5 @@
 # BuilderBackup
-A quick script for the Unity Game Engine that will automatically build your game upon start up.
+A quick script for the Unity Game Engine that will automatically build your game upon start up. Along with your game, it will also save a copy of all of your Editor scripts.
 
 This is to be used with JetBrains DotPeek, as this package is supposed to be used as a way of "backing up" your scripts if your computer crashes, saving any files that could become corrupted inside the resulting executable. Works on Windows, Linux, and OSX 32-bit and 64-bit.
 
