@@ -123,6 +123,9 @@ public class Builder : EditorWindow
 		string newPath = Application.dataPath.Substring(0, Application.dataPath.LastIndexOf("/"));
 		newPath += "/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll";
 
+		if (File.Exists (path.Substring (0, path.LastIndexOf ("/")) + "/Assembly-CSharp-Editor.dll"))
+			File.Delete (path.Substring (0, path.LastIndexOf ("/")) + "/Assembly-CSharp-Editor.dll");
+
 		File.Copy (newPath, path.Substring (0, path.LastIndexOf ("/")) + "/Assembly-CSharp-Editor.dll");
 
 		string s = BuildPipeline.BuildPlayer (bpo);
